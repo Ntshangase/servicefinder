@@ -1,16 +1,38 @@
 //import liraries
 import React, { Component } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, FlatList, TouchableOpacity } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { SafeAreaView } from 'react-native-safe-area-context';
+import serviceData from './data';
 
 
 // create a component
 const Home = ({ navigation }) => {
     return (
-        <View style={styles.container}>
-            <Text>Home</Text>
-        </View>
+        <SafeAreaView>
+            <FlatList 
+                data={serviceData}
+                contentInset={{padding: 12,}}
+                renderItem={({item}) => {
+                    return(
+                        <TouchableOpacity style={{marging:20}}>
+                            <Text>
+                                {item.category}
+                            </Text>
+                            <Text>
+                                {item.name}
+                            </Text>
+                            <Text>
+                                {item.numberCompany}
+                            </Text>
+                        </TouchableOpacity>
+                    )
+                } }
+            >
+
+            </FlatList>
+        </SafeAreaView>
     );
 };
 
