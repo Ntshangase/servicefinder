@@ -19,7 +19,7 @@ const Home = ({ navigation }) => {
                 renderItem={({item}) => {
                     return(
                         <TouchableOpacity style={{margin:10, height:windowHeight*0.2, backgroundColor:item.bgColor, borderRadius:10 }}>
-                            <View style={{}}>
+                            <View>
                             <Text style={styles.category}>
                                 {item.category}
                             </Text>
