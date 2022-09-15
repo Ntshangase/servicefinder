@@ -1,25 +1,28 @@
-import carwash from '/home/mntwana/servicefinder/assets/carwash.jpg';
+import carwashB from '/home/mntwana/servicefinder/assets/carwashB.jpg';
 import hairdresser from '/home/mntwana/servicefinder/assets/hairdresser.jpg';
-import massage from '/home/mntwana/servicefinder/assets/massage.jpg';
+import massageHer from '/home/mntwana/servicefinder/assets/massageHer.jpg'
 
 const serviceData = [
 {
     name:"Car Wash",
     category:"Cleaning",
     numberCompany:"10",
-    image:carwash
+    image:carwashB,
+    bgColor:'#aeea00'
 },
 {
     name:"Hairdresser",
     category:"Salon",
     numberCompany:"50",
-    image:hairdresser
+    image:hairdresser,
+    bgColor:'#f50057'
 },
 {
     name:"Massage",
     category:"Therapy",
     numberCompany:"30",
-    image:massage
+    image:massageHer,
+    bgColor:'#4a148c'
 },
 
 ]
