@@ -37,7 +37,7 @@ const Details = () => {
                                 key={index}
                                 coordinate={{latitude:maker.coords["latitude"], longitude:maker.coords["longitude"]}}
                                 title={maker.name}
-                                image={maker.avatar}
+                                //image={maker.avatar}
                                  
                             />
                         )

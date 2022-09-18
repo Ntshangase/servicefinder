@@ -10,8 +10,8 @@ const serviceList = [
         review:"5",
         avatar:imotowash,
         coords: {
-            latitude:-26.157067304826224,
-            longitude:27.874698200936262
+            latitude:-29.391396085607713,
+            longitude:30.66814286962876
         }
     },
     {
@@ -20,8 +20,8 @@ const serviceList = [
         review:"3",
         avatar:fullbody,
         coords: {
-            latitude:-26.243210181611726,
-            longitude:28.41620472532948
+            latitude:-33.40410755947661,
+            longitude:20.437783400937075
         }
     },
     {
