@@ -29,13 +29,23 @@ const Details = () => {
 
       const RenderMarker =() =>{
         return(
-             companies.map((maker, index) =>{ 
-                <Marker 
-                    key={index}
-                    coordinate={{latitude:maker.coords.latitude, longitude:maker.coords.longitude}}
-                    title={maker.name}
-              />
-             })    
+            <View>
+                { 
+                    companies.map((maker, index) =>{ 
+                        return(
+                            <Marker 
+                                key={index}
+                                coordinate={{latitude:maker.coords["latitude"], longitude:maker.coords["longitude"]}}
+                                title={maker.name}
+                                image={maker.avatar}
+                                 
+                            />
+                        )
+                     }
+                    )
+                }
+            </View>
+                 
         )
       }
 
