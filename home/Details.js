@@ -1,8 +1,10 @@
 //import liraries
 import React, { Component, useState, useEffect } from 'react';
 import { View, Text, StyleSheet, Dimensions  } from 'react-native';
-import MapView from 'react-native-maps';
+import MapView, {Marker} from 'react-native-maps';
 import * as Location from 'expo-location';
+import serviceList from './serviceList';
+import Loader from '../src/Loader';
 
 
 
@@ -10,7 +12,7 @@ import * as Location from 'expo-location';
 const Details = () => { 
 
     const [location, setLocation] = useState(null);
-    const [errorMsg, setErrorMsg] = useState(null);
+    const companies = serviceList;
 
     useEffect(() => {
         (async () => {
@@ -25,9 +27,35 @@ const Details = () => {
         })();
       }, []);
 
-    return (
+      const RenderMarker =() =>{
+        return(
+             companies.map((maker, index) =>{ 
+                <Marker 
+                    key={index}
+                    coordinate={{latitude:maker.coords.latitude, longitude:maker.coords.longitude}}
+                    title={maker.name}
+              />
+             })    
+        )
+      }
+
+      return (
         <View style={styles.container}>
-            <MapView style={styles.map} />
+            { companies != null
+                ?<MapView style={styles.map}
+                initialRegion={{
+                    latitude: -26.107567,
+                    longitude: 28.056702,
+                    latitudeDelta: 25,
+                    longitudeDelta: 23,
+                  }}
+                showsUserLocation={true}
+            >
+                <RenderMarker></RenderMarker>
+            </MapView>
+                : <Loader />
+            }
+            
         </View>
     );
 };
