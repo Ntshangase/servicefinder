@@ -15,7 +15,7 @@ console.log("firebase not connected");
 export default function App() { 
 
   if(!firebase.apps.length) {
-    console.log("Connected to Firebase")
+    console.log("Connected to Firebase"),
     firebase.inintializeApp(firebaseConfig);
   }
  
