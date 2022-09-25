@@ -10,7 +10,7 @@ import * as firebase from '/home/mntwana/servicefinder/firebase@8.2.3';
 import firebaseConfig from './src/firebaseConfig';
 
 const Stack = createNativeStackNavigator();
-
+ 
 export default function App() { 
 
   if(!firebase.apps.length) {

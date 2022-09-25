@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "firebase@8.2.3",
+    "slug": "firebase@8.2.3",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
