@@ -11,6 +11,7 @@ import firebaseConfig from './src/firebaseConfig';
 
 const Stack = createNativeStackNavigator();
  
+console.log("firebase not connected");
 export default function App() { 
 
   if(!firebase.apps.length) {
