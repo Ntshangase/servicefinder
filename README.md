@@ -1,10 +1,12 @@
 # servicefinder
-master branch
-    -answers M3-Assessment 1
-version 2
-    - answers M4-Assessment 1
-version 3
-    -answers M4-Assessment 1
+This is a react-native app that achieves the folloewing functionalities : allows users to register an account then login to the app's dashboard, read data from a dataset for a feature on the app.
+Connection to firebase has been stopped and some functionalities may not be as they should.
+
+# Dependancies
+You need to install expo to run this app.
+
+# Instructions
+to run the app please use 'expo start'
 
 #APK file
 can be used to test the app in your andriod phone 
