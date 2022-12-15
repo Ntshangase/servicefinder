@@ -10,6 +10,8 @@ const Login = ({ navigation }) => {
   return (
     <SafeAreaView>
       <View style={styles.form} >
+      <Text style={{fontSize:18, marginBottom:18, textAlign:'center'}} >Sing in to continue</Text>
+        
         <TextInput
           style={styles.input}
           placeholder="Email"

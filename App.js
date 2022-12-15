@@ -5,6 +5,7 @@ import Login from './src/Login';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Home from './home/Home';
 import About from './src/About';
+import Details from './home/Details';
 
 const Stack = createNativeStackNavigator();
 
@@ -36,6 +37,16 @@ export default function App() {
       }} />
 
       <Stack.Screen name="Home" component={Home} 
+      options={{
+        headerStyle: {
+          backgroundColor: '#1BDE3D',
+        },
+        headerTintColor: 'black',
+        headerTitleStyle: {
+          fontWeight: 'bold',
+        },
+      }} />
+      <Stack.Screen name="Details" component={Details} 
       options={{
         headerStyle: {
           backgroundColor: '#1BDE3D',
