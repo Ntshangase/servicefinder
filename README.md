@@ -8,5 +8,5 @@ You need to install expo to run this app.
 # Instructions
 to run the app please use 'expo start'
 
-#APK file
+# APK file
 can be used to test the app in your andriod phone 
